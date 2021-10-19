@@ -1,12 +1,16 @@
-matpompili-imgur-upload:
+imgur-upload:
   admin:
-    get-id: Get one here
-    without: without
-    leaveEmpty: Leave the following fields empty to disable image resizing
-    maxImageWidth: Max image width
-    maxImageHeight: Max image height
+    settings:
+      hide-markdown-image: Hide Markdown image button
+      allow-paste: Allow upload by pasting an image
+      embed-type:
+        title: Embed type
+        preview-with-link: Preview (1024px) with link to full-size image
+        preview-without-link: Preview without link
+        full-with-link: Full-size image with link
+        full-without-link: Full-size image without link
   forum:
-    attach: Attach
+    upload: Press or paste to upload
     loading: Uploading...
-    loaded: Loaded!
+    done: Done!
     error: Error

@@ -1,31 +1,37 @@
 {
-    "name": "matpompili/flarum-imgur-upload",
-    "description": "Enable the upload of images to imgur directly from the composer",
-    "version": "v1.0.0",
+    "name": "matteocontrini/flarum-imgur-upload",
+    "description": "Simple image upload from the Flarum editor",
     "type": "flarum-extension",
-    "license": "MIT",
+    "license": "GPL-3.0",
     "authors": [
       {
-        "name": "Matteo Pompili",
-        "email": "matpompili@gmail.com"
+        "name": "Matteo Contrini",
+        "email": "matteo@contrini.it"
       }
     ],
     "require": {
-        "flarum/core": "^0.1.0-beta.3"
+        "flarum/core": "^1.0.0"
     },
     "extra": {
         "flarum-extension": {
             "title": "Imgur Upload",
+            "category": "feature",
             "icon": {
-                "name": "upload",
-                "backgroundColor": "#000",
-                "color": "#87d37c"
-            }
+                "name": "fas fa-circle",
+                "backgroundColor": "#272727",
+                "color": "#85BF25"
+            },
+            "optional-dependencies": ["flarum/markdown"]
         }
+    },
+    "support": {
+        "issues": "https://github.com/matteocontrini/flarum-imgur-upload/issues",
+        "source": "https://github.com/matteocontrini/flarum-imgur-upload",
+        "forum": "https://discuss.flarum.org/d/18491"
     },
     "autoload": {
         "psr-4": {
-            "Matpompili\\Imgur\\Upload\\": "src/"
+            "ImgurUpload\\": "src/"
         }
     }
 }
